@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+<generatorConfiguration>
+	<!-- 数据库驱动 -->
+	<classPathEntry
+		location="C:\Users\liupe\.m2\repository\mysql\mysql-connector-java\5.1.24\mysql-connector-java-5.1.24.jar"></classPathEntry>
+
+	<context id="context1">
+		<!-- 数据库的连接信息 -->
+		<jdbcConnection connectionURL="jdbc:mysql://localhost:3306/ris"
+			driverClass="com.mysql.jdbc.Driver" password="root" userId="root" />
+		<!-- 实体类 -->
+		<javaModelGenerator targetPackage="com.lanou.entity"
+			targetProject="project/src/main/java" />
+
+		<!-- mapper.xml的生成 -->
+		<sqlMapGenerator targetPackage="com.lanou.mapper"
+			targetProject="project/src/main/java" />
+		<!-- mapper 接口 -->
+		<javaClientGenerator targetPackage="com.lanou.mapper"
+			targetProject="project/src/main/java" type="XMLMAPPER" />
+
+
+		<!-- 数据库表 tableName 表名 domainObjectName 类名 -->
+		<table tableName="area" domainObjectName="Area"
+			enableCountByExample="false" enableUpdateByExample="false"
+			enableDeleteByExample="false" enableSelectByExample="false"
+			selectByExampleQueryId="false" >
+			<property name="useActualColumnNames" value="true" />
+		</table>
+		<table tableName="housing_estate" domainObjectName="HouseEstate"
+			enableCountByExample="false" enableUpdateByExample="false"
+			enableDeleteByExample="false" enableSelectByExample="false"
+			selectByExampleQueryId="false" >
+			<property name="useActualColumnNames" value="true" />
+		</table>
+		<table tableName="owner" domainObjectName="Owner"
+			enableCountByExample="false" enableUpdateByExample="false"
+			enableDeleteByExample="false" enableSelectByExample="false"
+			selectByExampleQueryId="false" >
+			<property name="useActualColumnNames" value="true" />
+		</table>
+		<table tableName="reclamation_order" domainObjectName="ReclOrder"
+			enableCountByExample="false" enableUpdateByExample="false"
+			enableDeleteByExample="false" enableSelectByExample="false"
+			selectByExampleQueryId="false" >
+			<property name="useActualColumnNames" value="true" />
+		</table>
+		<table tableName="scrap" domainObjectName="Scrap"
+			enableCountByExample="false" enableUpdateByExample="false"
+			enableDeleteByExample="false" enableSelectByExample="false"
+			selectByExampleQueryId="false" >
+			<property name="useActualColumnNames" value="true" />
+		</table>
+		<table tableName="scrap_collector" domainObjectName="ScrapCollector"
+			enableCountByExample="false" enableUpdateByExample="false"
+			enableDeleteByExample="false" enableSelectByExample="false"
+			selectByExampleQueryId="false" >
+			<property name="useActualColumnNames" value="true" />
+		</table>
+		<table tableName="sys_department" domainObjectName="SysDepartment"
+			enableCountByExample="false" enableUpdateByExample="false"
+			enableDeleteByExample="false" enableSelectByExample="false"
+			selectByExampleQueryId="false" >
+			<property name="useActualColumnNames" value="true" />
+		</table>
+		<table tableName="sys_dict" domainObjectName="SysDict"
+			enableCountByExample="false" enableUpdateByExample="false"
+			enableDeleteByExample="false" enableSelectByExample="false"
+			selectByExampleQueryId="false" >
+			<property name="useActualColumnNames" value="true" />
+		</table>
+		<table tableName="sys_dict_detail" domainObjectName="SysDictDetail"
+			enableCountByExample="false" enableUpdateByExample="false"
+			enableDeleteByExample="false" enableSelectByExample="false"
+			selectByExampleQueryId="false" >
+			<property name="useActualColumnNames" value="true" />
+		</table>
+		<table tableName="sys_menu" domainObjectName="SysMenu"
+			enableCountByExample="false" enableUpdateByExample="false"
+			enableDeleteByExample="false" enableSelectByExample="false"
+			selectByExampleQueryId="false" >
+			<property name="useActualColumnNames" value="true" />
+		</table>
+		<table tableName="sys_role" domainObjectName="SysRole"
+			enableCountByExample="false" enableUpdateByExample="false"
+			enableDeleteByExample="false" enableSelectByExample="false"
+			selectByExampleQueryId="false" >
+			<property name="useActualColumnNames" value="true" />
+		</table>
+		<table tableName="sys_role_menu" domainObjectName="SysRoleMenu"
+			enableCountByExample="false" enableUpdateByExample="false"
+			enableDeleteByExample="false" enableSelectByExample="false"
+			selectByExampleQueryId="false" >
+			<property name="useActualColumnNames" value="true" />
+		</table>
+		<table tableName="sys_user" domainObjectName="SysUser"
+			enableCountByExample="false" enableUpdateByExample="false"
+			enableDeleteByExample="false" enableSelectByExample="false"
+			selectByExampleQueryId="false" >
+			<property name="useActualColumnNames" value="true" />
+		</table>
+	</context>
+</generatorConfiguration>
